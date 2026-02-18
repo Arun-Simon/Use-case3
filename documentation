@@ -1,0 +1,17 @@
+Intelligent Log Anomalizer
+
+Problem Statement: Production logs do not always contain explicit "ERROR" keywords
+
+Objective: Build a tool that:
+		Analyzes word frequency in logs
+		Identifies rare or unusual patterns
+		Flags potential anomalies
+		Produces anomaly insights summary
+
+Solution: 
+
+Converted every word to lowercase and extracted the words, and marked the count
+Counts all frequency
+Words appearing less than or equal to 2 were marked as rare words
+If a rare word is found, the line is marked as potential anomaly
+
